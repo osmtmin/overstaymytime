@@ -116,7 +116,6 @@ body{
     width: 1320px;
     margin: 0 auto;
     position: relative;
-    background-color: aqua;
 }
 .link{
     display: flex;
@@ -297,7 +296,9 @@ body{
 }
 
 /* brand */
-
+#brand{
+    overflow: hidden;
+}
 #brand{
     height: 980px;
     margin: 0 auto;

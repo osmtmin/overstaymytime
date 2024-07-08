@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1322" height="137" viewBox="0 0 1322 137">
+  <defs>
+    <filter id="A_small_journey_in_everyday_life" x="0" y="0" width="1322" height="137" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#4b2a09" flood-opacity="0.51"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#A_small_journey_in_everyday_life)">
+    <text id="A_small_journey_in_everyday_life-2" data-name="A small journey in everyday life" transform="translate(657.5 88.5)" fill="#fff" font-size="61" font-family="SuperBubble, Super Bubble"><tspan x="-637.419" y="0">A small journey in everyday life</tspan></text>
+  </g>
+</svg>

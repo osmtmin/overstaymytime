@@ -100,16 +100,17 @@ body{
     margin: 0 auto;
     position: relative;
     display: flex;
+    justify-content: space-between;
 }
 
 .nav{
     display: flex;
-    margin-left: 150px;
+    justify-content: space-between;
     width: 40%;
 }
 .nav> li{
     position: relative;
-    justify-content: space-between;
+    display: flex;
 }
 .nav> li> a{
     display: inline-block;
@@ -147,7 +148,7 @@ body{
 }
 .header_logo{
     position: absolute;
-    top: 54px;
+    top: 45px;
     left: 600px;
     z-index: 9;
 }

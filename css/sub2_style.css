@@ -46,23 +46,25 @@ body{
     margin: 0 auto;
     position: relative;
     display: flex;
+    justify-content: space-between;
 }
 
 .nav{
     display: flex;
-    margin-left: 150px;
+    justify-content: space-between;
+    width: 40%;
 }
 .nav> li{
     position: relative;
+    display: flex;
 }
 .nav> li> a{
     display: inline-block;
     font-size: 18px;
     font-family: 'Montserrat';
     font-weight: bold;
-    margin-top: 60px;
-    padding: 0 20px 20px;
-    margin-right: 150px;
+    margin: 50px 70px 0;
+    padding-bottom: 20px;
 }
 .nav> li> a:hover{
     color: #cac1a6;
@@ -93,8 +95,8 @@ body{
 }
 .header_logo{
     position: absolute;
-    top: 54px;
-    left: 580px;
+    top: 45px;
+    left: 600px;
     z-index: 9;
 }
 .header_logo:hover{
@@ -106,8 +108,8 @@ body{
 .submenu{
     /* 안 보이게 하기  */
     position: absolute;
-    top: 80px;
-    left: -70px;
+    top: 74px;
+    left: 0;
     width: 100%;
     z-index: 99;
 }

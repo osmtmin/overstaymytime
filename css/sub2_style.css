@@ -134,7 +134,7 @@ body{
     margin-top: 20px;
 }
 .inner_banner{
-    height: 772px;
+    height: 540px;
     background: url(../images/3_sub2_images/shop_banner.png) no-repeat center center;
 }
 
@@ -149,14 +149,6 @@ body{
     font-size: 50px;
     font-weight: bold;
     margin: 100px 0 50px;
-}
-#shop .btn{
-    display: inline-block;
-    border: 2px solid #a2875c;
-    border-radius: 30px;
-    padding: 4px 15px;
-    font-size: 15px;
-    font-weight: bold;
 }
 .product{
     margin-top: 50px;

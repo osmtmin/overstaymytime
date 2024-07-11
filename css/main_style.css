@@ -316,11 +316,11 @@ body{
     margin: 0 auto; 
     position: relative;
     overflow: hidden;
-    height: 430px;
+    height: 380px;
 }
 .cloud_wrap img{
     position: absolute;
-    top: 0;
+    top: -50px;
     left: 50%;
     margin-left: -1020px;
     animation: cloud_move 5s infinite linear;

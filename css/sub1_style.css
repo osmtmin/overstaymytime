@@ -58,6 +58,28 @@
         transform: translateX(0);
     }
 }
+@keyframes airplane_move{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes camera_rotate{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.); 
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 html,div,body,p,ul,ol,li,a,h1,h2,h3,h4,h5,h6,input,textarea,select,option,strong,span,em,dl,dt,dd,table,th,td,tr,img,video {
     margin: 0;
     padding: 0;
@@ -355,6 +377,95 @@ body{
     margin: 25px 0 50px;
     font-size: 16px;
     line-height: 25px;
+}
+
+/* story */
+
+#story{
+    margin: 100px auto;
+    position: relative;
+    height: 1500px;
+    overflow: hidden;
+}
+.story1, .story3{
+    width: 1320px;
+    height: 300px;
+    border-radius: 100px 0 0 100px;
+    background-color: #CCB38E;
+}
+.story1{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+.story1_wrap,.story2_wrap,.story3_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.plane{
+    position: absolute;
+    top: 55px;
+    left: -235px;
+    /* animation: airplane_move 5s infinite linear; */
+}
+.story_text{
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+.story_text p{
+    font-size: 16px;
+    line-height: 25px;
+}
+.story_text p:nth-child(2){
+    margin: 30px 0;
+}
+.wood1,.wood3{
+    position: absolute;
+    top: -100px;
+    right: 300px;
+}
+.story2{
+    width: 1320px;
+    height: 300px;
+    border-radius: 0 100px 100px 0;
+    background-color: #A79376;
+    position: absolute;
+    top: 600px;
+    left: 0;
+}
+
+.wood2{
+    position: absolute;
+    top: -100px;
+    left: 300px;
+}
+
+.camera{
+    position: absolute;
+    top: 20px;
+    right: -120px;
+}
+.camera_effect{
+    position: absolute;
+    top: -20px;
+    right: -205px;
+    animation: camera_rotate 3s infinite linear;
+}
+
+.story3{
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+}
+
+.polaroid{
+    position: absolute;
+    top: -20px;
+    left: -150px;
 }
 
 /* banner2 */

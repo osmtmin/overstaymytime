@@ -187,12 +187,11 @@ body{
 .product li a:hover{
     background-color: #c7baa4;
 }
-.product li:nth-child(9){
-    padding-left: 310px;
-}
+
 .product li:nth-child(10){
-    padding-right: 310px;
+    padding-right: 675px;
 }
+
 /* footer */
 
 #footer{

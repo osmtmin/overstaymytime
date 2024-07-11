@@ -362,6 +362,7 @@ body{
 }
 
 /* event */
+
 #event_wrap{
     overflow: hidden;
 }
@@ -372,8 +373,11 @@ body{
 }
 .event_banner{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 100px;
+}
+.event_banner li:nth-child(2){
+    margin: 0 20px;
 }
 .event_banner li:nth-child(1),
 .event_banner li:nth-child(3){

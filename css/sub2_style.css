@@ -151,7 +151,7 @@ body{
     margin: 100px 0 50px;
 }
 .product{
-    margin-top: 50px;
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -163,6 +163,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 112px;
+    position: relative;
 }
 .product li a{
     display: block;
@@ -175,6 +176,12 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+}
+.product li .best_icon{
+    position: absolute;
+    top: -35px;
+    left: -15px;
+    z-index: 9;
 }
 .product li a img{
     width: 100%;
@@ -192,6 +199,63 @@ body{
     padding-right: 675px;
 }
 
+/* event_banner */
+
+#event_banner{
+    width: 1320px;
+    margin: 150px auto;
+    background: url(../images/3_sub2_images/texture.png) no-repeat center center;
+    height: 327px;
+    display: flex;
+    position: relative;
+}
+.postcard{
+    position: absolute;
+    top: -150px;
+    left: 0;
+}
+.postcard img{
+    transform: scale(1);
+    transition: all 1s;
+}
+.postcard img:hover{
+    transform: scale(1.08);
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.title span{
+    margin: 20px 20px 0;
+    color: #634F2E;
+    font-size: 43px;
+}
+.event_text{
+    margin-left: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.event_text p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 30px;
+    line-height: 30px;
+}
+.btn{
+    display: inline-block;
+    width: 90px;
+    padding: 6px 10px;
+    border-radius: 50px;
+    margin-top: 30px;
+    background-color: #fff;
+}
+.btn:hover{
+    background-color: #a2875c;
+    color: #fff;
+}
 /* footer */
 
 #footer{

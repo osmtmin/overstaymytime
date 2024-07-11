@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* webfont */
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,div,body,p,ul,ol,li,a,h1,h2,h3,h4,h5,h6,input,textarea,select,option,strong,span,em,dl,dt,dd,table,th,td,tr,img,video {
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#wrap{
+    min-width: 1320px;
+}
+
+html, body{
+    cursor: url(../images/cursor.cur),auto;
+}
+body{
+    font-family: 'NEXON Lv1 Gothic OTF','Montserrat';
+    font-size: 14px;
+    line-height: 20px;
+    color: #a2875c;
+}
+
+/* header */
+
+.inner_header{
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.nav> li{
+    position: relative;
+    display: flex;
+}
+.nav> li> a{
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin: 50px 70px 0;
+    padding-bottom: 20px;
+}
+.nav> li> a:hover{
+    color: #cac1a6;
+}
+.link_wrap{
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    background-color: aqua;
+}
+.link{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 9;
+}
+.link li::before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #a2875c;
+    margin: 0 10px;
+}
+.link li:nth-child(1)::before{
+    display: none;
+}
+.header_logo{
+    position: absolute;
+    top: 45px;
+    left: 600px;
+    z-index: 9;
+}
+.header_logo:hover{
+    transform: rotate(15deg);
+}
+
+/* submenu */
+
+.submenu{
+    /* 안 보이게 하기  */
+    position: absolute;
+    top: 74px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+.gnb li:hover .submenu{
+    /* 보인다 */
+    display: block;
+}
+
+.submenu li a{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+}
+.submenu li a:hover{
+    color: black;
+}
+
+/* banner */
+
+#banner{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.inner_banner{
+    height: 540px;
+    background: url(../images/4_sub3_images/event_banner.png) no-repeat center center;
+}

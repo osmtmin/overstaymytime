@@ -256,7 +256,9 @@ body{
 }
 
 /* postcard */
-
+#postcard_wrap{
+    overflow: hidden;
+}
 #postcard{
     width: 1320px;
     margin: 200px auto;

@@ -40,12 +40,12 @@
                     <li>
                         <a href="sub3.html">EVENT</a>
                         <ul class="submenu">
-                            <li><a href="#">진행중인 이벤트</a></li>
-                            <li><a href="#">종료된 이벤트</a></li>
+                            <li><a href="#Board01">진행중인 이벤트</a></li>
+                            <li><a href="#Board02">종료된 이벤트</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="margin">COMMUNITY</a>
+                        <a href="sub4.html">COMMUNITY</a>
                         <ul class="submenu">
                             <li><a href="#">NOTICE</a></li>
                             <li><a href="#">FAQ</a></li>
@@ -58,146 +58,244 @@
             <div class="inner_banner">
             </div>
         </div>
-        <div id="container">
-            <h2 class="event_title">
+        <div id="board">
+            <h2 class="event_title" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                 <img src="../images/4_sub3_images/event_title.svg" alt="event">
             </h2>
-            <a href="#" class="btn">진행중인 이벤트</a>
-            <a href="#" class="btn">종료된 이벤트</a>
-            <div id="postcard">
-                <div class="pin">
-                    <img src="../images/4_sub3_images/pin.png" alt="pin">
-                </div>
-                <h2 class="title">
-                    <img src="../images/4_sub3_images/event_postcard.svg" alt="postcard">
-                </h2>
-                <div class="event_bg">
-                    <div class="left">
-                        <div class="event_img">
-                            <div class="postcard_img">
-                                <img src="../images/4_sub3_images/event_postcard.png" alt="postcard">
+            <ul id="tap_menu">
+                <li class="tap tablink opacity" onclick="openBoard(event,'Board01')">진행중인 이벤트</li>
+                <li class="tap tablink" onclick="openBoard(event,'Board02')">종료된 이벤트</li>
+            </ul>
+            <div id="Board01" class="container board">
+                <div id="postcard" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000" >
+                    <div class="pin">
+                        <img src="../images/4_sub3_images/pin.png" alt="pin">
+                    </div>
+                    <h2 class="title">
+                        <img src="../images/4_sub3_images/event_postcard.svg" alt="postcard">
+                    </h2>
+                    <div class="event_bg">
+                        <div class="left">
+                            <div class="event_img">
+                                <div class="postcard_img">
+                                    <img src="../images/4_sub3_images/event_postcard.png" alt="postcard">
+                                </div>
+                                <div class="postcard_effect1 effect">
+                                    <img src="../images/4_sub3_images/postcard_effect1.png" alt="postcard_effect">
+                                </div>
+                                <div class="postcard_effect2 effect">
+                                    <img src="../images/4_sub3_images/postcard_effect2.png" alt="postcard_effect">
+                                </div>
                             </div>
-                            <div class="postcard_effect1 effect">
-                                <img src="../images/4_sub3_images/postcard_effect1.png" alt="postcard_effect">
-                            </div>
-                            <div class="postcard_effect2 effect">
-                                <img src="../images/4_sub3_images/postcard_effect2.png" alt="postcard_effect">
+                        </div>
+                        <div class="right">
+                            <div class="event_text">
+                                <strong class="slogan">
+                                    첫 구매하고 여행 엽서 받아가자 !
+                                </strong>
+                                <p>
+                                    overstaymytime에서는
+                                     <br>첫 구매 고객에게 무료로 엽서 3종을 드리고 있습니다.
+                                     <br>이 엽서들로 책상 주변을 감성적으로 꾸며보는 건 어떨까요?
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="right">
-                        <div class="event_text">
-                            <strong class="slogan">
-                                첫 구매하고 여행 엽서 받아가자 !
-                            </strong>
-                            <p>
-                                overstaymytime에서는
-                                 <br>첫 구매 고객에게 무료로 엽서 3종을 드리고 있습니다.
-                                 <br>이 엽서들로 책상 주변을 감성적으로 꾸며보는 건 어떨까요?
-                            </p>
+                </div>
+                <div id="wallpaper" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <div class="pin">
+                        <img src="../images/4_sub3_images/pin.png" alt="pin">
+                    </div>
+                    <h2 class="title">
+                        <img src="../images/4_sub3_images/event_wallpaper.svg" alt="postcard">
+                    </h2>
+                    <div class="event_bg">
+                        <div class="left">
+                            <div class="event_text">
+                                <strong class="slogan">
+                                    회원가입하고 유럽 배경화면 받아가자 ! 
+                                </strong>
+                                <p>
+                                    유럽 감성 가득한 사진들로 핸드폰이나 패드, 노트북
+                                    <br>배경화면을 꾸며보세요.
+                                </p>
+                                <p>
+                                    제공되는 이미지들은 overstaymytime에서
+                                     <br>직접 찍은 사진으로 상업적 사용은 불가합니다.
+                                </p>
+                            </div>
                         </div>
+                        <div class="right">
+                            <div class="event_img">
+                                <div class="wallpaper_img">
+                                    <img src="../images/4_sub3_images/event_wallpaper.png" alt="wallpaper">
+                                </div>
+                                <div class="wallpaper_effect1 effect">
+                                    <img src="../images/4_sub3_images/wallpaper_effect1.png" alt="effect">
+                                </div>
+                                <div class="wallpaper_effect2 effect">
+                                    <img src="../images/4_sub3_images/wallpaper_effect2.png" alt="effect">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="poster" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <div class="pin">
+                        <img src="../images/4_sub3_images/pin.png" alt="pin">
+                    </div>
+                    <h2 class="title">
+                        <img src="../images/4_sub3_images/event_postcard.svg" alt="postcard">
+                    </h2>
+                    <div class="event_bg">
+                        <div class="left">
+                            <div class="event_img">
+                                <div class="poster_img">
+                                    <img src="../images/4_sub3_images/event_poster.png" alt="poster">
+                                </div>
+                                <div class="poster_effect1 effect">
+                                    <img src="../images/4_sub3_images/poster_effect1.png" alt="effect">
+                                </div>
+                                <div class="poster_effect2 effect">
+                                    <img src="../images/4_sub3_images/poster_effect2.png" alt="effect">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="event_text">
+                                <strong class="slogan">
+                                    3만원 이상 구매시 여행 포스터 증정 !  
+                                </strong>
+                                <p>
+                                    3만원 이상 구매를 하시면
+                                     <br>특별 제작한 여행 포스터를 무료로 드리고 있습니다.
+                                     <br>이 포스터 하나면 감성 가득한 방 꾸미기 완성 ! 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div class="inner_footer">
+                        <h1 class="footer_logo">
+                            <a href="#"><img src="../images/footer_logo.svg" alt="footer_logo"></a>
+                        </h1>
+                        <p>
+                            Travel Souvenir Shop
+                        </p>
+                        <ul class="footer_link">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="sub1.html">ABOUT</a></li>
+                            <li><a href="#">COMMUNITY</a></li>
+                        </ul>
+                        <p>
+                            대표 : 김민정 부산광역시 중구 중앙대로 2 TEL : 010-0211-0507 E-MAIL : osmt@gamil.com
+                        </p>
+                        <p>
+                            Copyright ⓒ 2024 overstaymytime All rights reserved.
+                        </p>
+                        <ul class="sns">
+                            <li><a href="#"><img src="../images/insta_ic.svg" alt="sns"></a></li>
+                            <li><a href="#"><img src="../images/twiter_ic.svg" alt="sns"></a></li>
+                            <li><a href="#"><img src="../images/facebook_ic.svg" alt="sns"></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div id="wallpaper">
-                <div class="pin">
-                    <img src="../images/4_sub3_images/pin.png" alt="pin">
-                </div>
-                <h2 class="title">
-                    <img src="../images/4_sub3_images/event_wallpaper.svg" alt="postcard">
-                </h2>
-                <div class="event_bg">
-                    <div class="left">
-                        <div class="event_text">
-                            <strong class="slogan">
-                                회원가입하고 유럽 배경화면 받아가자 ! 
-                            </strong>
-                            <p>
-                                유럽 감성 가득한 사진들로 핸드폰이나 패드, 노트북
-                                <br>배경화면을 꾸며보세요.
-                            </p>
-                            <p>
-                                제공되는 이미지들은 overstaymytime에서
-                                 <br>직접 찍은 사진으로 상업적 사용은 불가합니다.
-                            </p>
-                        </div>
+            <div id="Board02" class="box1_1	board" style="display:none;">
+                <div id="calendar" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <div class="pin">
+                        <img src="../images/4_sub3_images/pin.png" alt="pin">
                     </div>
-                    <div class="right">
-                        <div class="event_img">
-                            <div class="wallpaper_img">
-                                <img src="../images/4_sub3_images/event_wallpaper.png" alt="wallpaper">
-                            </div>
-                            <div class="wallpaper_effect1 effect">
-                                <img src="../images/4_sub3_images/wallpaper_effect1.png" alt="effect">
-                            </div>
-                            <div class="wallpaper_effect2 effect">
-                                <img src="../images/4_sub3_images/wallpaper_effect2.png" alt="effect">
+                    <h2 class="title">
+                        <img src="../images/4_sub3_images/event_calendar.svg" alt="postcard">
+                    </h2>
+                    <div class="event_bg">
+                        <div class="left">
+                            <div class="event_img">
+                                <div class="calendar_img">
+                                    <img src="../images/4_sub3_images/event_calendar.png" alt="postcard">
+                                </div>
+                                <div class="close_stamp">
+                                    <img src="../images/4_sub3_images/close_stamp.svg" alt="close_stamp">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div id="poster">
-                <div class="pin">
-                    <img src="../images/4_sub3_images/pin.png" alt="pin">
-                </div>
-                <h2 class="title">
-                    <img src="../images/4_sub3_images/event_postcard.svg" alt="postcard">
-                </h2>
-                <div class="event_bg">
-                    <div class="left">
-                        <div class="event_img">
-                            <div class="poster_img">
-                                <img src="../images/4_sub3_images/event_poster.png" alt="poster">
-                            </div>
-                            <div class="poster_effect1 effect">
-                                <img src="../images/4_sub3_images/poster_effect1.png" alt="effect">
-                            </div>
-                            <div class="poster_effect2 effect">
-                                <img src="../images/4_sub3_images/poster_effect2.png" alt="effect">
+                        <div class="right">
+                            <div class="event_text">
+                                <strong class="slogan">
+                                    오픈 기념 2024년 달력 선착순 증정 !
+                                </strong>
+                                <p>
+                                    브랜드 오픈 기념 구매해주신 선착순 100분에게
+                                     <br>2024년달력을 증정해드립니다.
+                                </p>
+                                <p>
+                                    *이 이벤트는 선착순 행사로 조기 종료될 수 있습니다.* 
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="right">
-                        <div class="event_text">
-                            <strong class="slogan">
-                                3만원 이상 구매시 여행 포스터 증정 !  
-                            </strong>
-                            <p>
-                                3만원 이상 구매를 하시면
-                                 <br>특별 제작한 여행 포스터를 무료로 드리고 있습니다.
-                                 <br>이 포스터 하나면 감성 가득한 방 꾸미기 완성 ! 
-                            </p>
+                </div>
+                <div id="photobook" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <div class="pin">
+                        <img src="../images/4_sub3_images/pin.png" alt="pin">
+                    </div>
+                    <h2 class="title">
+                        <img src="../images/4_sub3_images/event_photobook.svg" alt="photobook">
+                    </h2>
+                    <div class="event_bg">
+                        <div class="left">
+                            <div class="event_text">
+                                <strong class="slogan">
+                                    리뷰 남기고 감성 가득한 포토북 받아가자 !
+                                </strong>
+                                <p>
+                                    리뷰를 남겨주신 분들 중 추첨을 통하여 총 3분께
+                                     <br>유럽 감성 가득한 포토북을 보내드립니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="event_img">
+                                <div class="photobook_img">
+                                    <img src="../images/4_sub3_images/event_photobook.png" alt="photobook">
+                                </div>
+                                <div class="close_stamp">
+                                    <img src="../images/4_sub3_images/close_stamp.svg" alt="close_stamp">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div id="footer">
-            <div class="inner_footer">
-                <h1 class="footer_logo">
-                    <a href="#"><img src="../images/footer_logo.svg" alt="footer_logo"></a>
-                </h1>
-                <p>
-                    Travel Souvenir Shop
-                </p>
-                <ul class="footer_link">
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="sub1.html">ABOUT</a></li>
-                    <li><a href="#">COMMUNITY</a></li>
-                </ul>
-                <p>
-                    대표 : 김민정  부산광역시 중구 중앙대로 2   TEL : 010-0211-0507    E-MAIL : osmt@gamil.com
-                </p>
-                <p>
-                    Copyright ⓒ 2024 overstaymytime All rights reserved.
-                </p>
-                <ul class="sns">
-                    <li><a href="#"><img src="../images/insta_ic.svg" alt="sns"></a></li>
-                    <li><a href="#"><img src="../images/twiter_ic.svg" alt="sns"></a></li>
-                    <li><a href="#"><img src="../images/facebook_ic.svg" alt="sns"></a></li>
-                </ul>
+                <div id="footer">
+                    <div class="inner_footer">
+                        <h1 class="footer_logo">
+                            <a href="#"><img src="../images/footer_logo.svg" alt="footer_logo"></a>
+                        </h1>
+                        <p>
+                            Travel Souvenir Shop
+                        </p>
+                        <ul class="footer_link">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="sub1.html">ABOUT</a></li>
+                            <li><a href="#">COMMUNITY</a></li>
+                        </ul>
+                        <p>
+                            대표 : 김민정 부산광역시 중구 중앙대로 2 TEL : 010-0211-0507 E-MAIL : osmt@gamil.com
+                        </p>
+                        <p>
+                            Copyright ⓒ 2024 overstaymytime All rights reserved.
+                        </p>
+                        <ul class="sns">
+                            <li><a href="#"><img src="../images/insta_ic.svg" alt="sns"></a></li>
+                            <li><a href="#"><img src="../images/twiter_ic.svg" alt="sns"></a></li>
+                            <li><a href="#"><img src="../images/facebook_ic.svg" alt="sns"></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="top_btn">
@@ -219,5 +317,26 @@
             $(this).children(".submenu").stop().slideUp()
         });
     </script>
+    <!-- tap -->
+    <script>
+        function openBoard(evt, boardName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("board");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" opacity", "");
+            }
+            document.getElementById(boardName).style.display = "block";
+            evt.currentTarget.className += " opacity";
+        }
+    </script>
+        <!-- aos js -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>

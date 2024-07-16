@@ -74,7 +74,7 @@
         transform: scale(1);
     }
     50%{
-        transform: scale(1.); 
+        transform: scale(1.2); 
     }
     100%{
         transform: scale(1);
@@ -423,7 +423,6 @@ body{
     position: absolute;
     top: 55px;
     left: -235px;
-    /* animation: airplane_move 5s infinite linear; */
 }
 .story_text{
     color: #fff;

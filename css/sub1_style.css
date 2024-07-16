@@ -103,6 +103,15 @@ body{
     font-size: 14px;
     line-height: 20px;
     color: #a2875c;
+     /* Prevent font scaling in landscape */
+
+     -webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+
+     -moz-text-size-adjust: none; /*Firefox*/
+
+     -ms-text-size-adjust: none;  /*Ie*/
+
+     -o-text-size-adjust: none; /*old versions of Opera*/
 }
 /* header */
 
@@ -138,7 +147,6 @@ body{
     width: 1320px;
     margin: 0 auto;
     position: relative;
-    background-color: aqua;
 }
 .link{
     display: flex;
@@ -173,7 +181,7 @@ body{
 .submenu{
     /* 안 보이게 하기  */
     position: absolute;
-    top: 74px;
+    top: 110px;
     left: 0;
     width: 100%;
     z-index: 99;
@@ -182,14 +190,20 @@ body{
     /* 보인다 */
     display: block;
 }
-
+.submenu li{
+    border-radius: 30px;
+}
 .submenu li a{
     display: block;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px;
+    background-color: #A79376;
 }
 .submenu li a:hover{
-    color: black;
+    color: #A79376;
+    background-color: #fff;
 }
 
 /* banner */
@@ -427,6 +441,8 @@ body{
     position: absolute;
     top: -100px;
     right: 300px;
+    height: 100px;
+    overflow: hidden;
 }
 .story2{
     width: 1320px;
@@ -442,6 +458,8 @@ body{
     position: absolute;
     top: -100px;
     left: 300px;
+    height: 100px;
+    overflow: hidden;
 }
 
 .camera{

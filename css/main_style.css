@@ -161,7 +161,7 @@ body{
 .submenu{
     /* 안 보이게 하기  */
     position: absolute;
-    top: 74px;
+    top: 110px;
     left: 0;
     width: 100%;
     z-index: 99;
@@ -170,14 +170,20 @@ body{
     /* 보인다 */
     display: block;
 }
-
+.submenu li{
+    border-radius: 30px;
+}
 .submenu li a{
     display: block;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px;
+    background-color: #A79376;
 }
 .submenu li a:hover{
-    color: black;
+    color: #A79376;
+    background-color: #fff;
 }
 
 /* banner swiper */

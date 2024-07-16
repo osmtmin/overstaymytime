@@ -108,7 +108,7 @@ body{
 .submenu{
     /* 안 보이게 하기  */
     position: absolute;
-    top: 74px;
+    top: 110px;
     left: 0;
     width: 100%;
     z-index: 99;
@@ -117,14 +117,17 @@ body{
     /* 보인다 */
     display: block;
 }
-
 .submenu li a{
     display: block;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px;
+    background-color: #A79376;
 }
 .submenu li a:hover{
-    color: black;
+    color: #A79376;
+    background-color: #fff;
 }
 
 /* banner */
@@ -140,12 +143,19 @@ body{
 
 /* container */
 
-#container{
-    height: 2568px;
+#board{
+    height: 100%;
     background-color: #FFF7EE;
     text-align: center;
     z-index: -1;
 }
+
+/* .container{
+    height: 100%;
+    background-color: #FFF7EE;
+    text-align: center;
+    z-index: -1;
+} */
 
 .event_title{
     font-size: 50px;
@@ -161,14 +171,42 @@ body{
     margin-top: 30px;
     border: 1px solid #a2875c;
 }
-.btn:hover{
+
+/* tap */
+
+#tap_menu {
+	position: relative;
+	padding: 20px 0;
+	display: inline-block;
+}
+#tap_menu>li {
+	display: inline-block;
+	font-size: 18px;
+	text-align: center;
+	margin: 0 5px;
+}
+.tap {
+	cursor: pointer;
+	display: inline-block;
+    padding: 6px 15px;
+    border-radius: 50px;
+    margin-top: 30px;
+    border: 1px solid #a2875c;
+}
+.tap:hover {
+    background-color: #fff;
+    color: #a2875c;
+    border: none;
+}
+
+.opacity {
     background-color: #a2875c;
     color: #fff;
 }
 
 /* postcard */
 
-#postcard, #wallpaper{
+#postcard, #wallpaper, #poster, #calendar, #photobook{
     width: 1320px;
     margin: 0 auto;
 }
@@ -180,6 +218,7 @@ body{
     background-color: #A79376;
     margin: 140px 0;
     display: flex;
+    border-radius: 147px;
 }
 .left, .right{
     width: 50%;
@@ -188,7 +227,8 @@ body{
     z-index: 9;
     animation: rotate 7s infinite linear;
 }
-#postcard .event_img, #wallpaper .event_img, #poster .event_img{
+#postcard .event_img, #wallpaper .event_img, #poster .event_img, #calendar .event_img,
+#photobook .event_img{
     position: relative;
 }
 
@@ -267,6 +307,34 @@ body{
     top: 284px;
     left: 465px;
 }
+
+/* calendar */
+
+.calendar_img{
+    position: absolute;
+    left: 0;
+    top: -163px;
+}
+#calendar .close_stamp{
+    position: absolute;
+    left: 500px;
+    top: 20px;
+}
+
+/* photobook */
+
+.photobook_img{
+    position: absolute;
+    left: 0;
+    top: -195px;
+}
+
+#photobook .close_stamp{
+    position: absolute;
+    left: -195px;
+    top: 24px;
+}
+
 /* footer */
 
 #footer{

@@ -189,7 +189,7 @@ table tr:nth-child(1){
 }
 th, td{
     border-bottom: 1px solid #a2875c;
-    padding: 15px;
+    padding: 20px;
 }
 th{
     font-size: 18px;

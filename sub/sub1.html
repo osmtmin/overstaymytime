@@ -251,6 +251,9 @@
             <div class="window_title">
                 <img src="../images/2_sub1_images/plane_text.svg" alt="plnae_text">
             </div>
+            <p class="mouse_text">
+                마우스를 비행기 창문에 올려보세요
+            </p>
             <div class="airplane_wrap" data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
             data-aos-easing="ease-out-cubic"
@@ -271,9 +274,9 @@
                     <img src="../images/2_sub1_images/light2.png" alt="light1">
                 </div>
             </div>
-            <p>
+            <h2>
                 OVERSTAYMYTIME
-            </p>
+            </h2>
         </div>
         <div id="footer">
             <div class="inner_footer">
@@ -312,7 +315,6 @@
         </div>
     </div>
     <script src="../js/jquery-3.7.1.min.js"></script>
-<!--     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> -->
     <script>
         $(".img1").hover(
             function () { // mouseover
@@ -363,6 +365,15 @@
          });
       </script>
       <!-- type it -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          new TypeIt('.mouse_text') //
+            .pause(1000)
+            // .delete(7, { delay: 1000 })
+            // .type('Academy')
+            .go();
+        });
+      </script>
       <script>
         document.addEventListener('DOMContentLoaded', () => {
           new TypeIt('.title_kr') //

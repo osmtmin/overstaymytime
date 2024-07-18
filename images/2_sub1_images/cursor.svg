@@ -1,0 +1,61 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 200px; height: 200px;"><style>
+     .line-cursor2-a {animation:line-cursor2-a 1.4s infinite;}
+     .line-cursor2-b {animation:line-cursor2-b 1.4s infinite;}
+     .line-cursor2-c {animation:line-cursor2-c 1.4s infinite;}
+     .line-cursor2-d {animation:line-cursor2-d 1.4s infinite;}
+     .line-cursor2-e {animation:line-cursor2-e 1.4s infinite;}
+     .line-cursor2-f {animation:line-cursor2-f 1.4s infinite;}
+     @keyframes line-cursor2-a {
+         0%{opacity: 0;}
+         20%{transform:translate3d(0, 0, 0); opacity: 0;}
+         60%{opacity: .8;}
+         70%{transform:translate3d(0, -4px, 0); opacity: .8;}
+         90%{opacity: 0;}
+         100%{transform:translate3d(0, -4px, 0); opacity: 0;}
+     }
+     @keyframes line-cursor2-b {
+         0%{opacity: 0;}
+         20%{transform:translate3d(0, 0, 0); opacity: 0;}
+         60%{opacity: .8;}
+         70%{transform:translate3d(4px, 0, 0); opacity: .8;}
+         90%{opacity: 0;}
+         100%{transform:translate3d(4px, 0, 0); opacity: 0;}
+     }
+     @keyframes line-cursor2-c {
+         0%{opacity: 0;}
+         20%{transform:translate3d(0, 0, 0); opacity: 0;}
+         60%{opacity: .8;}
+         70%{transform:translate3d(-4px, 0, 0); opacity: .8;}
+         90%{opacity: 0;}
+         100%{transform:translate3d(-4px, 0, 0); opacity: 0;}
+     }
+     @keyframes line-cursor2-d {
+         0%{opacity: 0;}
+         20%{transform:translate3d(0, 0, 0); opacity: 0;}
+         60%{opacity: .8;}
+         70%{transform:translate3d(4px, -4px, 0); opacity: .8;}
+         90%{opacity: 0;}
+         100%{transform:translate3d(4px, -4px, 0); opacity: 0;}
+     }
+     @keyframes line-cursor2-e {
+         0%{opacity: 0;}
+         20%{transform:translate3d(0, 0, 0); opacity: 0;}
+         60%{opacity: .8;}
+         70%{transform:translate3d(-4px, -4px, 0); opacity: .8;}
+         90%{opacity: 0;}
+         100%{transform:translate3d(-4px, -4px, 0); opacity: 0;}
+     }
+     @keyframes line-cursor2-f {
+         0%{opacity: 0;}
+         20%{transform:translate3d(0, 0, 0); opacity: 0;}
+         60%{opacity: .8;}
+         70%{transform:translate3d(-4px, 4px, 0); opacity: .8;}
+         90%{opacity: 0;}
+         100%{transform:translate3d(-4px, 4px, 0); opacity: 0;}
+     }
+     @media (prefers-reduced-motion: reduce) {
+         .line-cursor2-a, .line-cursor2-b, .line-cursor2-c, .line-cursor2-d, .line-cursor2-e, .line-cursor2-f {
+             animation: none;
+         }
+     }
+    </style><line class="line-cursor2-a stroke2" x1="46" y1="31" x2="46" y2="21" stroke="rgba(220,141,0,1)" stroke-width="2px" style="animation-duration: 1.4s;"></line><line class="line-cursor2-b stroke2" x1="59" y1="42" x2="69" y2="42" stroke="rgba(220,141,0,1)" stroke-width="2px" style="animation-duration: 1.4s;"></line><line class="line-cursor2-c stroke2" x1="35" y1="42" x2="25" y2="42" stroke="rgba(220,141,0,1)" stroke-width="2px" style="animation-duration: 1.4s;"></line><line class="line-cursor2-d stroke2" x1="54.2929" y1="34.2929" x2="61.2929" y2="27.2929" stroke="rgba(220,141,0,1)" stroke-width="2px" style="animation-duration: 1.4s;"></line><line class="line-cursor2-e stroke2" x1="38.2929" y1="34.7071" x2="31.2929" y2="27.7071" stroke="rgba(220,141,0,1)" stroke-width="2px" style="animation-duration: 1.4s;"></line><line class="line-cursor2-f stroke2" x1="39.7071" y1="49.7071" x2="32.7071" y2="56.7071" stroke="rgba(220,141,0,1)" stroke-width="2px" style="animation-duration: 1.4s;"></line><path class="stroke1 fill1" d="M47.8402 39.7802L73.8205 63.9047C74.1803 64.2388 73.8933 64.8372 73.4075 64.7658L58.3083 62.5453C58.1196 62.5176 57.9315 62.5996 57.8235 62.7567L47.912 77.1734C47.6338 77.578 47 77.3812 47 76.8902V40.1466C47 39.71 47.5203 39.4831 47.8402 39.7802Z" fill="rgba(239,215,110,1)" stroke="rgba(255,255,255,1)" stroke-width="2px" style="animation-duration: 1.4s;"></path></svg>

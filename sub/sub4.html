@@ -40,15 +40,15 @@
                     <li>
                         <a href="sub3.html">EVENT</a>
                         <ul class="submenu">
-                            <li><a href="#">진행중인 이벤트</a></li>
-                            <li><a href="#">종료된 이벤트</a></li>
+                            <li><a href="sub3.html">진행중인 이벤트</a></li>
+                            <li><a href="sub3.html">종료된 이벤트</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="sub4.html">COMMUNITY</a>
                         <ul class="submenu">
-                            <li><a href="#">NOTICE</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <li><a href="sub4.html">NOTICE</a></li>
+                            <li><a href="sub4.html">FAQ</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -67,16 +67,16 @@
             </div>
             <div id="Board01" class="board">
                 <h2 class="com_title">
-                    <img src="../images/5_sub4_images/notice_title.svg" alt="notice">
+                    <img src="../images/5_sub4_images/notice_title.svg" alt="notice" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                 </h2>
-                <div class="notice_wrap">
+                <div class="notice_wrap" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                     <table>
                         <tr>
                             <!-- 1 -->
                              <th>NO</th>
                              <th>제목</th>
                              <th>글쓴이</th>
-                             <th>작성시간</th>
+                             <th>작성일</th>
                              <th>조회수</th>
                         </tr>
                         <tr>
@@ -124,16 +124,16 @@
             </div>
             <div id="Board02" class="box1_1	board" style="display:none;">
                 <h2 class="com_title">
-                    <img src="../images/5_sub4_images/faq_title.svg" alt="faq">
+                    <img src="../images/5_sub4_images/faq_title.svg" alt="faq" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                 </h2>
-                <div class="faq_wrap">
+                <div class="faq_wrap" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                     <table>
                         <tr>
                             <!-- 1 -->
                              <th>NO</th>
                              <th>제목</th>
                              <th>글쓴이</th>
-                             <th>작성시간</th>
+                             <th>작성일</th>
                              <th>조회수</th>
                         </tr>
                         <tr>
@@ -250,6 +250,11 @@
             document.getElementById(boardName).style.display = "block";
             evt.currentTarget.className += " opacity";
         }
+    </script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>

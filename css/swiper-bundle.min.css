@@ -352,7 +352,7 @@
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
     /* content: 'prev' */
-    content: url(/images/1_main_images/1_banner/left_btn.png);
+    content: url(../images/1_main_images/1_banner/left_btn.png);
     margin-left: 20px;
 }
 
@@ -365,7 +365,7 @@
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
     /* content: 'next' */
-    content: url(/images/1_main_images/1_banner/right_btn.png);
+    content: url(../images/1_main_images/1_banner/right_btn.png);
     margin-right: 20px;
 }
 

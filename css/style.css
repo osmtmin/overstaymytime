@@ -1,3 +1,4 @@
+@charset "utf-8";
 @font-face {
   font-family: 'NEXON Lv1 Gothic OTF';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
@@ -27,7 +28,9 @@ body{
   font-family: 'NEXON Lv1 Gothic OTF';
   color: #2f2f2f;
 }
-
+#wrap{
+  min-width: 1320px;
+}
 /* start-screen */
 
 .start-screen, .end-screen {

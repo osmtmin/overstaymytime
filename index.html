@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>overstaymytime</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- typeit js -->
+  <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
+   <!-- aos css -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div class="start-screen">
+    <p class="title">A Small Journey In Everyday Life</p>
+    <div class="down">
+      <img src="images/arrow-down-2.svg" alt="down">
+    </div>
+  </div>
+  <div class="main-content-1">
+    <div class="sticky">
+      <div class="sticky-background">
+        To feel travelling in one's daily life
+      </div>
+      <div class="card-frame">
+        <div class="card">
+          <div class="front">
+            <img src="images/photo1.jpg" alt="photo">
+          </div>
+          <div class="back">
+            <h3>over</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="images/photo2.jpg" alt="photo">
+          </div>
+          <div class="back">
+            <h3>stay</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="images/photo3.jpg" alt="photo">
+          </div>
+          <div class="back">
+            <h3>my</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="images/photo4.jpg" alt="photo">
+          </div>
+          <div class="back">
+            <h3>time</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="end-screen" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="text">
+      <div class="map">
+        <img src="images/map.png" alt="map">
+      </div>
+      <h1>Stay in our travel</h1>
+      <p>
+        우리의 여행에 함께 머물러주세요.
+        <br>많은 사람들의 일상에 소소하지만 
+        작은 여행을 함께 만들어가고 싶습니다.        
+      </p>
+    </div>
+    <div id="frame">
+      <div id="card2">
+        <div id="light"></div>
+      </div>
+    </div>
+    <a href="main.html" class="btn">STAY</a>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new TypeIt('.title') //
+        .pause(1000)
+        .go();
+    });
+  </script>
+  <script>
+    class CardFlipOnScroll {
+      constructor(wrapper, sticky) {
+        this.wrapper = wrapper
+        this.sticky = sticky
+        this.cards = sticky.querySelectorAll('.card')
+        this.length = this.cards.length
+
+        this.start = 0
+        this.end = 0
+        this.step = 0
+      }
+
+      init() {
+        this.start = this.wrapper.offsetTop - 100
+        this.end = this.wrapper.offsetTop + this.wrapper.offsetHeight - innerHeight * 1.2
+        this.step = (this.end - this.start) / (this.length * 2)
+      }
+
+      animate() {
+        this.cards.forEach((card, i) => {
+          const s = this.start + this.step * i
+          const e = s + this.step * (this.length + 1)
+
+          if (scrollY <= s) {
+            card.style.transform = `
+              perspective(100vw)
+              translateX(100vw) 
+              rotateY(180deg)
+            `
+          } else if (scrollY > s && scrollY <= e - this.step) {
+            card.style.transform = `
+              perspective(100vw)
+              translateX(${100 + (scrollY - s) / (e - s) * -100}vw)
+              rotateY(180deg)
+            `
+          } else if (scrollY > e - this.step && scrollY <= e) {
+            card.style.transform = `
+              perspective(100vw)
+              translateX(${100 + (scrollY - s) / (e - s) * -100}vw)
+              rotateY(${180 + -(scrollY - (e - this.step)) / this.step * 180}deg)
+            `
+          } else if (scrollY > e) {
+            card.style.transform = `
+              perspective(100vw)
+              translateX(0vw) 
+              rotateY(0deg)
+            `
+          }
+        })
+      }
+    }
+
+    const mainContent1 = document.querySelector('.main-content-1')
+    const sticky = document.querySelector('.sticky')
+    const cardFlipOnScroll = new CardFlipOnScroll(mainContent1, sticky)
+    cardFlipOnScroll.init()
+
+    window.addEventListener('scroll', () => {
+      cardFlipOnScroll.animate()
+    })
+
+    window.addEventListener('resize', () => {
+      cardFlipOnScroll.init()
+    })
+  </script>
+  <script>
+    const frame = document.getElementById('frame')
+    const card = document.getElementById('card2')
+    const light = document.getElementById('light')
+
+    let { x, y, width, height } = frame.getBoundingClientRect()
+
+    function mouseMove(e) {
+      const left = e.clientX - x
+      const top = e.clientY - y
+      const centerX = left - width / 2
+      const centerY = top - height / 2
+      const d = Math.sqrt(centerX**2 + centerY**2)
+
+      card.style.boxShadow = `
+        ${-centerX / 5}px ${-centerY / 10}px 10px rgba(0, 0, 0, 0.2)
+      `
+
+      card.style.transform = `
+        rotate3d(
+          ${-centerY / 100}, ${centerX / 100}, 0, ${d / 8}deg
+        )
+      `
+
+      light.style.backgroundImage = `
+        radial-gradient(
+          circle at ${left}px ${top}px, #00000040, #ffffff00, #ffffff99
+        )
+      `
+    }
+
+    frame.addEventListener('mouseenter', () => {
+      frame.addEventListener('mousemove', mouseMove)
+    })
+
+    frame.addEventListener('mouseleave', () => {
+      frame.removeEventListener('mousemove', mouseMove)
+      card.style.boxShadow = ''
+      card.style.transform = ''
+      light.style.backgroundImage = ''
+    })
+
+    window.addEventListener('resize', () => {
+      rect = frame.getBoundingClientRect()
+      x = rect.x
+      y = rect.y
+      width = rect.width
+      height = rect.height
+    })
+  </script>
+  <!-- aos js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

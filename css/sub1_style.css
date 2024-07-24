@@ -492,7 +492,7 @@ body{
 #banner2{
     margin-top: 50px;
     height: 475px;
-    background: url(../images/2_sub1_images/photo_banner.jpg) no-repeat center center fixed;
+    background: url(../images/2_sub1_images/photo_banner.jpg) repeat center center fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;

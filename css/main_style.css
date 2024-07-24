@@ -382,6 +382,9 @@ body{
     justify-content: center;
     margin-top: 100px;
 }
+.event_banner li img{
+    border-radius: 60px;
+}
 .event_banner li:nth-child(2){
     margin: 0 20px;
 }
@@ -389,7 +392,7 @@ body{
 .event_banner li:nth-child(3){
     margin-top: 80px;
 }
-.event_banner li a img{
+.event_banner li img{
     transform: translateY(0);
     transition: all 1s;
 }

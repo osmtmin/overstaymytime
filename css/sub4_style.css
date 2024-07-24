@@ -161,6 +161,7 @@ body{
 	font-size: 18px;
 	text-align: center;
 	margin: 0 5px;
+    width: 100px;
 }
 
 .tap {
@@ -193,10 +194,23 @@ th, td{
 }
 th{
     font-size: 18px;
+    width: 120px;
 }
 td{
     text-align: center;
     cursor: pointer;
+}
+table tr td:nth-child(2){
+    width: 569px;
+}
+table tr td:nth-child(3){
+    width: 257px;
+}
+table tr td:nth-child(4){
+    width: 217px;
+}
+table tr td:nth-child(5){
+    width: 157px;
 }
 /* search */
 .search_wrap{

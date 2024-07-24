@@ -176,6 +176,7 @@ body{
   margin-top: 150px;
   color: #A2875C;
 }
+
 @media screen and (orientation:portrait) {
   .card-frame {
     display: grid;

@@ -36,8 +36,8 @@
                     <li>
                         <a href="sub3.html">EVENT</a>
                         <ul class="submenu">
-                            <li><a href="sub3.html">진행중인 이벤트</a></li>
-                            <li><a href="sub3.html">종료된 이벤트</a></li>
+                            <li><a href="sub3.html" class="event_btn">진행중인 이벤트</a></li>
+                            <li><a href="sub3.html" class="event_btn">종료된 이벤트</a></li>
                         </ul>
                     </li>
                     <li>
@@ -304,6 +304,13 @@
         </div>
     </div>
     <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(".event_btn").click(function () {
+            $("body,html").animate({
+                scrollTop: 3000
+            }, 700)
+        })
+    </script>
     <script>
         $(".submenu").hide();
         $(".nav li").mouseenter(function(){

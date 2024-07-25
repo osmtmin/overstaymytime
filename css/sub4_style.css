@@ -161,7 +161,6 @@ body{
 	font-size: 18px;
 	text-align: center;
 	margin: 0 5px;
-    width: 100px;
 }
 
 .tap {
@@ -194,23 +193,10 @@ th, td{
 }
 th{
     font-size: 18px;
-    width: 120px;
 }
 td{
     text-align: center;
     cursor: pointer;
-}
-table tr td:nth-child(2){
-    width: 569px;
-}
-table tr td:nth-child(3){
-    width: 257px;
-}
-table tr td:nth-child(4){
-    width: 217px;
-}
-table tr td:nth-child(5){
-    width: 157px;
 }
 /* search */
 .search_wrap{
@@ -238,6 +224,132 @@ table tr td:nth-child(5){
     font-family: 'NEXON Lv1 Gothic OTF';
 }
 .search_wrap input::placeholder{
+    color: #a2875c;
+}
+
+/*section1*/
+
+.ab {
+    color: #A79376;
+}
+
+/*js제어*/
+
+#section1 {
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*faq*/
+
+.faqs{
+    margin-top: 70px;
+}
+.font_10 {
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 11px;
+}
+
+.right {
+    position: relative;
+    width: 1320px;
+    padding: 10px 0;
+    float: right;
+    overflow: hidden;
+    border-radius: 0 20px 20px 0;
+}
+
+.right ul li:nth-child(1) {
+    text-align: center;
+    width: 140px;
+    float: left;
+}
+
+.right ul li:nth-child(2) {
+    width: 1070px;
+    float: left;
+}
+
+.right ul li:nth-child(3) {
+    width: 110px;
+    float: right;
+    padding-top: 17.5px
+}
+
+.right>li ul {
+    width: 100%;
+    height: 50px;
+    padding: 15px 0;
+    overflow: hidden;
+}
+.right ul li:nth-child(1) .notice_line,
+.right ul li:nth-child(5) .notice_line{
+    height: 3px;
+}
+.text_info {
+    background: #ffffff;
+    text-align: left;
+    overflow: hidden;
+}
+
+.right>li .text_info {
+    display: none;
+    padding: 25px 0 30px 0;
+}
+
+.right>li .text_info {
+    width: 100%
+}
+
+.notice_line {
+    height: 1px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background: #a2875c;
+}
+
+.notice_bg {
+    height: 781px
+}
+
+.right .font_18 {
+    position: relative;
+    height: 50px;
+    color: #a2875c;
+    font-size: 14px;
+}
+
+.right .font_18 .noc_po {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.turn {
+    transform: rotate(180deg);
+}
+
+.plus img {
+    transition: transform 0.5s;
+}
+.text_info{
+    background-color: #fff9f1;
+}
+.text_info p {
+    float: left;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.answer {
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
     color: #a2875c;
 }
 /* footer */

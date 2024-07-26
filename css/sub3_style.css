@@ -163,7 +163,6 @@ body{
     overflow: hidden;
 }
 
-
 /* .container{
     height: 100%;
     background-color: #FFF7EE;
@@ -177,14 +176,14 @@ body{
     text-align: center;
     padding-top: 50px;
 }
-.btn{
+/* .btn{
     display: inline-block;
-    /* width: 90px; */
+    width: 90px;
     padding: 6px 15px;
     border-radius: 50px;
     margin-top: 30px;
     border: 1px solid #a2875c;
-}
+} */
 
 /* tap */
 
@@ -207,8 +206,12 @@ body{
     border-radius: 50px;
     margin-top: 30px;
     background-color: #fff;
-    color: #a2875c;
 }
+/* .tap:hover {
+    background-color: #fff;
+    color: #a2875c;
+    border: none;
+} */
 
 .opacity {
     background-color: #a2875c;

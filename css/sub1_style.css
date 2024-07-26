@@ -92,7 +92,7 @@ a{
     color: inherit;
 }
 #wrap{
-    min-width: 1320px;
+    min-width: 1400px;
 }
 
 html, body{
@@ -174,36 +174,6 @@ body{
 }
 .header_logo:hover{
     transform: rotate(15deg);
-}
-
-/* submenu */
-
-.submenu{
-    /* 안 보이게 하기  */
-    position: absolute;
-    top: 110px;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-}
-.gnb li:hover .submenu{
-    /* 보인다 */
-    display: block;
-}
-.submenu li{
-    border-radius: 30px;
-}
-.submenu li a{
-    display: block;
-    text-align: center;
-    font-size: 15px;
-    color: #fff;
-    padding: 10px;
-    background-color: #A79376;
-}
-.submenu li a:hover{
-    color: #A79376;
-    background-color: #fff;
 }
 
 /* banner */

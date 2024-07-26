@@ -75,7 +75,7 @@ html, body{
 }
 .map{
   animation: bounce 1.5s infinite linear;
-  margin-bottom: 30px;
+  margin: 50px 0 30px;
 }
 .end-screen .btn{
   display: inline-block;

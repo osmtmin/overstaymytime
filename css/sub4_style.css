@@ -171,6 +171,9 @@ td{
     text-align: center;
     cursor: pointer;
 }
+tr:hover{
+    background-color: #fff9f1;
+}
 /* search */
 .search_wrap{
     width: 400px;

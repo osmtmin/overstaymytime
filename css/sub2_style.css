@@ -158,11 +158,15 @@ body{
     top: -35px;
     left: -15px;
     z-index: 9;
+    transition: all 1s;
 }
 .product li a img{
     width: 100%;
     transform: rotate(0);
     transition: all 0.5s;
+}
+.product li .best_icon:hover{
+    transform: rotateY(180deg);
 }
 .product li a img:hover{
     transform: rotate(10deg);
